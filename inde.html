@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n8n for E-commerce Brands 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: #1a1a1a;
+            line-height: 1.6;
+            margin: 1%;
+            padding-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 100%;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: #ffffff;
+            padding: 1.2rem 1%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .content {
+            padding: 1%;
+        }
+
+        h2 {
+            color: #f5576c;
+            font-size: 1.1rem;
+            margin: 1.2rem 0 0.6rem 0;
+            padding-bottom: 0.3rem;
+            border-bottom: 2px solid #f5576c;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 0.95rem;
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        h4 {
+            color: #fa709a;
+            font-size: 0.88rem;
+            margin: 0.8rem 0 0.4rem 0;
+        }
+
+        p {
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+            color: #2d3748;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #fff5f7 0%, #ffe8f0 100%);
+            border-left: 4px solid #f5576c;
+            padding: 1%;
+            margin: 0.8rem 0;
+            border-radius: 6px;
+        }
+
+        .workflow-step {
+            background: #fff;
+            border: 2px solid #f093fb;
+            padding: 1%;
+            margin: 0.6rem 0;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .step-number {
+            position: absolute;
+            top: -12px;
+            left: 10px;
+            background: #f5576c;
+            color: #fff;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .step-content {
+            margin-top: 0.8rem;
+        }
+
+        .code-block {
+            background: #2d3748;
+            color: #f093fb;
+            padding: 1%;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.8rem;
+            margin: 0.6rem 0;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        .tip {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1%;
+            margin: 0.8rem 0;
+            border-radius: 4px;
+        }
+
+        .success {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+            padding: 1%;
+            margin: 0.8rem 0;
+            border-radius: 4px;
+        }
+
+        .info {
+            background: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            padding: 1%;
+            margin: 0.8rem 0;
+            border-radius: 4px;
+        }
+
+        .icon {
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        ul, ol {
+            margin: 0.6rem 0 0.6rem 1.2rem;
+            font-size: 0.9rem;
+            color: #2d3748;
+        }
+
+        li {
+            margin: 0.4rem 0;
+        }
+
+        .tool-badge {
+            display: inline-block;
+            background: #f5576c;
+            color: #fff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            margin: 0.2rem;
+            font-weight: 500;
+        }
+
+        .roi-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            padding: 1%;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border: 2px solid #10b981;
+        }
+
+        .node-diagram {
+            background: linear-gradient(135deg, #ffe8f0 0%, #fff5f7 100%);
+            padding: 1%;
+            margin: 0.6rem 0;
+            border-radius: 6px;
+            border: 1px solid #f093fb;
+        }
+
+        .arrow {
+            color: #f5576c;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            margin: 0.3rem 0;
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.1rem; }
+            h2 { font-size: 1rem; }
+            h3 { font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛍️ n8n for E-commerce Brands</h1>
+            <div class="subtitle">Automate Product Launches, Sales & Customer Experience | 2026</div>
+        </header>
+
+        <div class="content">
+            <div class="card">
+                <h3>🎯 Built for Online Sellers</h3>
+                <p>Running a small e-commerce brand means wearing 10 hats: product creator, marketer, copywriter, customer service, fulfillment... This guide automates the marketing and operations side so you can focus on sourcing amazing products.</p>
+                <p><strong>Perfect for:</strong> Shopify stores, WooCommerce shops, Etsy sellers, Amazon FBA brands, DTC brands</p>
+            </div>
+
+            <h2>🛠️ Your E-commerce Automation Stack</h2>
+
+            <div class="info">
+                <div class="icon">🔧 Tools You'll Connect:</div>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li><strong>Store:</strong> Shopify, WooCommerce, or BigCommerce</li>
+                    <li><strong>Email:</strong> Klaviyo, MailChimp, or Omnisend</li>
+                    <li><strong>Reviews:</strong> Judge.me, Loox, or Stamped.io</li>
+                    <li><strong>SMS:</strong> Postscript or Attentive</li>
+                    <li><strong>Social:</strong> Instagram, TikTok, Pinterest, Facebook</li>
+                    <li><strong>AI:</strong> OpenAI GPT-4 or Claude</li>
+                    <li><strong>Images:</strong> DALL-E or Midjourney API</li>
+                    <li><strong>Analytics:</strong> Google Sheets</li>
+                </ul>
+            </div>
+
+            <h2>💰 ROI for E-commerce Brands</h2>
+
+            <div class="roi-box">
+                <h3>What These 8 Workflows Save You:</h3>
+                <ul>
+                    <li><strong>Product descriptions:</strong> 10 hrs/week → 30 min</li>
+                    <li><strong>Review requests:</strong> 3 hrs/week → 0 hrs</li>
+                    <li><strong>Abandoned cart emails:</strong> 5 hrs/week → 0 hrs</li>
+                    <li><strong>Product launches:</strong> 6 hrs/launch → 1 hr</li>
+                    <li><strong>UGC collection:</strong> 4 hrs/week → 0 hrs</li>
+                    <li><strong>Inventory alerts:</strong> Never tracked → Automated</li>
+                    <li><strong>Customer winback:</strong> Never did → Automated</li>
+                    <li><strong>Social media posts:</strong> 8 hrs/week → 1 hr</li>
+                </ul>
+                <p style="margin-top: 1rem; font-weight: bold; color: #10b981; font-size: 1.1rem;">
+                    Total: 28+ hours saved/week = $2,800+/month at $25/hr
+                </p>
+                <p style="font-weight: bold;">More importantly: 15-30% increase in sales from better customer experience!</p>
+            </div>
+
+            <!-- WORKFLOW 1 -->
+            <h2>✍️ Workflow #1: AI Product Description Generator</h2>
+
+            <div class="workflow-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>The Problem</h3>
+                    <p>You find an amazing product to sell. Now you need to write: short description (50 words), long description (200 words), SEO meta description, Instagram caption, TikTok script. That's 2 hours of copywriting per product.</p>
+
+                    <h3>The Solution</h3>
+                    <p>Add basic product details in Shopify. AI generates 5 versions. You pick the best and publish in 5 minutes.</p>
+
+                    <div class="node-diagram">
+                        <div>1. Shopify Trigger (New product added)</div>
+                        <div class="arrow">↓</div>
+                        <div>2. OpenAI: Generate 5 description versions</div>
+                        <div class="arrow">↓</div>
+                        <div>3. Save to Google Sheet for review</div>
+                        <div class="arrow">↓</div>
+                        <div>4. Notify you in Slack ("New descriptions ready!")</div>
+                        <div class="arrow">↓</div>
+                        <div>5. You choose best → Update Shopify product</div>
+                    </div>
+
+                    <h3>Step-by-Step Setup</h3>
+
+                    <h4>Node 1: Shopify Webhook</h4>
+                    <ul>
+                        <li>In Shopify Admin: Settings → Notifications → Webhooks → Create webhook</li>
+                        <li>Event: Product creation</li>
+                        <li>In n8n: Add Webhook node, copy URL</li>
+                        <li>Paste n8n URL into Shopify webhook URL field</li>
+                    </ul>
+
+                    <h4>Node 2: AI Description Generator</h4>
+                    <ul>
+                        <li>Type: OpenAI</li>
+                        <li>Model: gpt-4o</li>
+                        <li>Prompt:</li>
+                    </ul>
+                    <div class="code-block">You're an expert e-commerce copywriter. Create product descriptions for:
+
+Product Name: {{$json.title}}
+Basic Info: {{$json.body_html}}
+Price: ${{$json.variants[0].price}}
+Category: {{$json.product_type}}
+
+Generate 5 versions:
+
+1. SHORT (50 words): Quick, punchy description highlighting main benefit
+2. MEDIUM (150 words): Detailed features + benefits, includes specs
+3. SEO (200 words): Keyword-rich, includes: [product type], benefits, uses, target audience
+4. EMOTIONAL (100 words): Storytelling approach, focus on transformation
+5. LISTICLE (bullet points): 5 reasons to buy this product
+
+For each, use:
+- Active voice
+- Customer benefits (not just features)
+- Sensory words (if applicable)
+- Urgency or exclusivity (if true)
+
+Output as JSON:
+{
+  "short": "...",
+  "medium": "...",
+  "seo": "...",
+  "emotional": "...",
+  "listicle": ["reason 1", "reason 2", ...]
+}</div>
+
+                    <h4>Node 3: Save to Google Sheets</h4>
+                    <ul>
+                        <li>Type: Google Sheets</li>
+                        <li>Operation: Append Row</li>
+                        <li>Spreadsheet: "Product Descriptions"</li>
+                        <li>Sheet: "Pending Review"</li>
+                        <li>Values:</li>
+                    </ul>
+                    <div class="code-block">Product Name | Short | Medium | SEO | Emotional | Listicle | Shopify ID | Status
+{{$json.title}} | {{short}} | {{medium}} | {{seo}} | {{emotional}} | {{listicle}} | {{$json.id}} | Pending</div>
+
+                    <h4>Node 4: Slack Notification</h4>
+                    <div class="code-block">🎨 New Product Descriptions Ready!
+
+Product: {{$json.title}}
+Price: ${{$json.price}}
+
+5 AI-generated descriptions waiting for your review:
+[Link to Google Sheet]
+
+Pick your favorite and update Shopify!</div>
+
+                    <div class="success">
+                        <div class="icon">✅ Result:</div>
+                        <p style="margin-top: 0.4rem; margin-bottom: 0;">Add product → Get 5 professional descriptions in 30 seconds → Choose best → Publish. Time per product: 2 hours → 5 minutes.</p>
+                    </div>
+
+                    <div class="tip">
+                        <div class="icon">🎯 Advanced Version:</div>
+                        <p style="margin-top: 0.4rem; margin-bottom: 0;">Add a "Competition Research" node that searches Google for similar products, scrapes their descriptions, and tells AI: "Write better than these competitors."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WORKFLOW 2 -->
+            <h2>🛒 Workflow #2: Abandoned Cart Recovery Sequence</h2>
+
+            <div class="workflow-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>The Problem</h3>
+                    <p>70% of shoppers abandon their carts. That's $7 out of every $10 you're losing. Most Shopify stores only send ONE generic email.</p>
+
+                    <h3>The Solution</h3>
+                    <p>Multi-channel, personalized recovery sequence that converts 15-25% of abandoned carts.</p>
+
+                    <div class="node-diagram">
+                        <div>1. Shopify: Cart Abandoned (trigger)</div>
+                        <div class="arrow">↓</div>
+                        <div>2. Wait 1 hour</div>
+                        <div class="arrow">↓</div>
+                        <div>3. Email #1: "Did you forget something?"</div>
+                        <div class="arrow">↓</div>
+                        <div>4. IF no purchase → Wait 24 hours</div>
+                        <div class="arrow">↓</div>
+                        <div>5. SMS: "Your cart expires soon! Use code SAVE10"</div>
+                        <div class="arrow">↓</div>
+                        <div>6. IF no purchase → Wait 3 days</div>
+                        <div class="arrow">↓</div>
+                        <div>7. Email #2: "Last chance: 15% off your cart"</div>
+                    </div>
+
+                    <h3>Node-by-Node Build</h3>
+
+                    <h4>Node 1: Abandoned Cart Trigger</h4>
+                    <ul>
+                        <li>Type: Shopify Trigger</li>
+                        <li>Event: Checkout Abandoned</li>
+                        <li>Requires: Shopify API key (Settings → Apps → Develop apps)</li>
+                    </ul>
+
+                    <h4>Node 2: Smart Wait</h4>
+                    <ul>
+                        <li>Type: Wait</li>
+                        <li>Duration: 1 hour</li>
+                        <li>(Don't send immediately - they might come back)</li>
+                    </ul>
+
+                    <h4>Node 3: Email #1 - Friendly Reminder</h4>
+                    <ul>
+                        <li>Type: Klaviyo or Gmail</li>
+                        <li>Subject: "Oops! You left something behind 👀"</li>
+                        <li>Body:</li>
+                    </ul>
+                    <div class="code-block">Hi {{$json.customer.first_name}}!
+
+You were so close to getting:
+
+{{#each $json.line_items}}
+• {{this.title}} - ${{this.price}}
+{{/each}}
+
+Total: ${{$json.total_price}}
+
+[Complete Your Order] ← One-click checkout
+
+Questions? Just reply to this email!
+
+Thanks,
+[Your Brand Name]
+
+P.S. These items are popular and might sell out soon!</div>
+
+                    <h4>Node 4: Check If Purchased</h4>
+                    <ul>
+                        <li>Type: IF node</li>
+                        <li>Condition: Check if order.id exists for this customer</li>
+                        <li>If YES: End workflow (they bought!)</li>
+                        <li>If NO: Continue to next step</li>
+                    </ul>
+
+                    <h4>Node 5: SMS Message (24 hours later)</h4>
+                    <ul>
+                        <li>Wait: 23 hours (total 24 since cart abandonment)</li>
+                        <li>Type: Postscript or Twilio</li>
+                        <li>Message:</li>
+                    </ul>
+                    <div class="code-block">Hi {{first_name}}! Your cart is about to expire. Use code SAVE10 for 10% off:
+{{checkout_url}}
+-{{your_brand}}</div>
+
+                    <h4>Node 6: Final Email (3 days later)</h4>
+                    <ul>
+                        <li>Wait: 3 days total</li>
+                        <li>Subject: "We saved your cart + 15% off 🎁"</li>
+                        <li>Offer bigger discount (15% off)</li>
+                        <li>Create urgency: "Expires in 24 hours"</li>
+                    </ul>
+
+                    <h4>Bonus Node: Track Performance</h4>
+                    <ul>
+                        <li>Type: Google Sheets</li>
+                        <li>Log: Cart value, emails sent, SMS sent, recovered Y/N</li>
+                        <li>Calculate recovery rate monthly</li>
+                    </ul>
+
+                    <div class="success">
+                        <div class="icon">📊 Expected Results:</div>
+                        <p style="margin-top: 0.4rem; margin-bottom: 0;">
+                        • Recovery rate: 15-25% (industry average is 8%)<br>
+                        • If you have $10,000 in monthly abandoned carts: Recover $1,500-2,500<br>
+                        • ROI: 10-20x the cost of discounts offered
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WORKFLOW 3 -->
+            <h2>⭐ Workflow #3: Automated Review Collection</h2>
+
+            <div class="workflow-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Why This Matters</h3>
+                    <p>Products with 50+ reviews convert 270% better than products with no reviews. But manually asking each customer? Impossible at scale.</p>
+
+                    <h3>The Automated Flow</h3>
+                    <div class="node-diagram">
+                        <div>1. Shopify: Order Fulfilled</div>
+                        <div class="arrow">↓</div>
+                        <div>2. Wait 7 days (product arrival + trial time)</div>
+                        <div class="arrow">↓</div>
+                        <div>3. Email: Request review with incentive</div>
+                        <div class="arrow">↓</div>
+                        <div>4. IF 5-star review received</div>
+                        <div class="arrow">↓</div>
+                        <div>5. Auto-post to Instagram + website</div>
+                        <div class="arrow">↓</div>
+                        <div>6. Send thank you discount code</div>
+                    </div>
+
+                    <h3>Implementation</h3>
+
+                    <h4>Node 1: Order Fulfillment Trigger</h4>
+                    <ul>
+                        <li>Shopify Trigger: Order Fulfilled</li>
+                        <li>This fires when tracking shows "delivered"</li>
+                    </ul>
+
+                    <h4>Node 2: Strategic Wait</h4>
+                    <ul>
+                        <li>Wait: 7 days (adjust based on your product)</li>
+                        <li>Beauty products: 3-5 days</li>
+                        <li>Fashion: 5-7 days</li>
+                        <li>Electronics: 10-14 days</li>
+                    </ul>
+
+                    <h4>Node 3: Review Request Email</h4>
+                    <div class="code-block">Subject: How's your [Product Name]? 🌟
+
+Hi {{customer_name}}!
+
+How are you loving your [product name]?
+
+We'd LOVE to hear your feedback! It helps other shoppers like you make confident decisions.
+
+[Leave a Review] ← 60 seconds
+
+As a thank you, you'll get a code for 15% off your next order! 🎁
+
+Questions or issues? Just reply - we're here to help.
+
+Thanks!
+[Your Name]
+[Your Brand]</div>
+
+                    <h4>Node 4: Judge.me Integration</h4>
+                    <ul>
+                        <li>If using Judge.me: They have an API</li>
+                        <li>Auto-pull new reviews daily</li>
+                        <li>Filter for 4-5 star reviews only</li>
+                    </ul>
+
+                    <h4>Node 5: Auto-Publish Great Reviews</h4>
+                    <ul>
+                        <li>IF review rating = 5 stars</li>
+                        <li>Create Instagram graphic (Canva API or template)</li>
+                        <li>Post to Instagram Stories + Feed</li>
+                        <li>Add review to product page testimonials section</li>
+                    </ul>
+
+                    <h4>Node 6: Thank You Reward</h4>
+                    <div class="code-block">Subject: Thank you + 15% off! 💝
+
+Hi {{name}}!
+
+THANK YOU for your amazing review! 🎉
+
+Here's your exclusive 15% off code: THANKS15
+
+Valid for 30 days on your next order.
+
+We're so grateful for customers like you!
+
+[Shop Now]</div>
+
+                    <div class="tip">
+                        <div class="icon">🎯 Growth Hack:</div>
+                        <p style="margin-top: 0.4rem; margin-bottom: 0;">Add a node that finds customers who left 5-star reviews on 2+ products. Tag them as "brand advocates" and send a special "influencer" offer: Free product in exchange for an Instagram post.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WORKFLOW 4 -->
+            <h2>🚀 Workflow #4: Product Launch Blitz</h2>
+
+            <div class="workflow-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>The Problem</h3>
+                    <p>New product launches require: announcement email, social media posts (5+ platforms), ads, influencer outreach, website banners. That's 8-12 hours of work per launch.</p>
+
+                    <h3>The Solution</h3>
+                    <p>Add product details in Notion. AI generates all marketing assets. You review and schedule everything in 1 hour.</p>
+
+                    <div class="node-diagram">
+                        <div>1. Notion: New Product Marked "Ready to Launch"</div>
+                        <div class="arrow">↓</div>
+                        <div>2. AI: Generate all marketing copy</div>
+                        <div class="arrow">↓</div>
+                        <div>3. Create social media posts (10x platforms)</div>
+                        <div class="arrow">↓</div>
+                        <div>4. Generate email announcement</div>
+                        <div class="arrow">↓</div>
+                        <div>5. Create ad copy (Facebook, Google, TikTok)</div>
+                        <div class="arrow">↓</div>
+                        <div>6. Influencer outreach email template</div>
+                    </div>
+
+                    <h3>What AI Generates for You</h3>
+
+                    <h4>Email Announcement:</h4>
+                    <ul>
+                        <li>Subject line (5 options)</li>
+                        <li>Preview text</li>
+                        <li>Email body with benefits + CTA</li>
+                        <li>PS line with urgency/scarcity</li>
+                    </ul>
+
+                    <h4>Social Media (10 versions):</h4>
+                    <ul>
+                        <li>3x Instagram captions (different angles)</li>
+                        <li>2x TikTok video scripts</li>
+                        <li>2x Facebook posts</li>
+                        <li>1x LinkedIn (if B2B product)</li>
+                        <li>2x Pinterest descriptions</li>
+                    </ul>
+
+                    <h4>Ad Copy:</h4>
+                    <ul>
+                        <li>Facebook: 3 headlines + 3 descriptions</li>
+                        <li>Google: 15 headlines + 4 descriptions</li>
+                        <li>TikTok: Hook + script for 15-second ad</li>
+                    </ul>
+
+                    <h3>The Master Prompt</h3>
+                    <div class="code-block">You're a product launch specialist for DTC e-commerce brands.
+
+Create a complete launch package for:
+
+Product Name: {{$json.product_name}}
+Category: {{$json.category}}
+Price: ${{$json.price}}
+Target Audience: {{$json.target_audience}}
+Key Benefits: {{$json.benefits}}
+Unique Selling Point: {{$json.usp}}
+Launch Date: {{$json.launch_date}}
+
+Generate:
+
+1. EMAIL ANNOUNCEMENT (3 versions: Excitement, Urgency, Exclusivity)
+   - Subject lines (5 options each)
+   - Body copy (150 words)
+   - CTA
+
+2. INSTAGRAM (3 captions)
+   - Version A: Product benefits
+   - Version B: Customer transformation story
+   - Version C: Behind-the-scenes / founder story
+   - Include emojis + 5-7 hashtags
+
+3. TIKTOK SCRIPTS (2 versions, 15 seconds each)
+   - Hook in first 3 seconds
+   - Product demo angle
+   - Trending sound suggestions
+
+4. FACEBOOK ADS
+   - 3 headlines (max 40 chars)
+   - 3 primary text options (125 chars)
+   - Call-to-action: Shop Now / Learn More
+
+5. INFLUENCER OUTREACH
+   - Personalized pitch template
+   - Product highlights
+   - Collaboration proposal
+
+Format as JSON for easy parsing.</div>
+
+                    <div class="success">
+                        <div class="icon">✅ Result:</div>
+                        <p style="margin-top: 0.4rem; margin-bottom: 0;">Complete launch package in 5 minutes. You review, tweak if needed, and schedule. Product launch time: 12 hours → 1 hour.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WORKFLOW 5 -->
+            <h2>📸 Workflow #5: UGC (User-Generated Content) Collector</h2>
+
+            <div class="workflow-step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Why UGC is Gold</h3>
+                    <p>Customer photos convert 5x better than professional product shots. But finding, requesting permission, and reposting them manually? Time-consuming.</p>
+
+                    <div class="node-diagram">
+                        <div>1. Instagram Monitor (hourly check for brand tag)</div>
+                        <div class="arrow">↓</div>
+                        <div>2. Download customer photo</div>
+                        <div class="arrow">↓</div>
+                        <div>3. Send DM requesting permission</div>
+                        <div class="arrow">↓</div>
+                        <div>4. If approved: Add logo watermark</div>
+                        <div class="arrow">↓</div>
+                        <div>5. Repost to brand Instagram + save to Google Drive</div>
+                        <div class="arrow">↓</div>
+                        <div>6. Add to product page as social proof</div>
+                    </div>
+
+                    <h3>Setup</h3>
+
+                    <h4>Node 1: Instagram Hashtag Monitor</h4>
+                    <ul>
+                        <li>Type: HTTP Request (Instagram Graph API)</li>
+                        <li>Search for: #yourbrandname OR @yourhandle</li>
+                        <li>Run: Every 6 hours</li>
+                        <li>Filter: Only posts from the last 24 hours</li>
+                    </ul>
+
+                    <h4>Node 2: Permission Request DM</h4>
+                    <div class="code-block">Hey [username]! 👋
+
+We LOVE your post featuring [product name]! Would you mind if we reposted it on our Instagram and website?
+
+We'll give you full credit and tag you!
+
+Reply YES if that's cool 😊
+
+Thanks!
+[Your Brand] Team</div>
+
+                    <h4>Node 3: Webhook for Response</h4>
+                    <ul>
+                        <li>Set up Instagram webhook for DM replies</li>
+                        <li>If reply contains "yes" → Continue workflow</li>
+                        <li>If no reply in 48 hours → Send gentle follow-up</li>
+                    </ul>
+
+                    <h4>Node 4: Repost Automation</h4>
+                    <ul>
+                        <li>Download image from their post</li>
+                        <li>Add your logo/watermark (ImageMagick)</li>
+                        <li>Create caption: "📸 by @username - Thanks for sharing!"</li>
+                        <li>Post to your Instagram feed + stories</li>
+                    </ul>
+
+                    <div class="tip">
+                        <div class="icon">⚖️ Legal Note:</div>
+                        <p style="margin-top: 0.4rem; margin-bottom: 0;">ALWAYS get explicit permission before reposting customer content. This workflow automates the asking, but you must wait for approval. Never auto-repost without permission!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WORKFLOW 6 -->
+            <h2>📦 Workflow #6: Low Inventory Alert System</h2>
+
+            <div class="workflow-step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h3>The Problem</h3>
+                    <p>Your best-selling product goes out of stock. You don't notice for 3 days. You just lost $5,000 in sales.</p>
+
+                    <h3>The Solution</h3>
+                    <div class="node-diagram">
+                        <div>1. Schedule: Check inventory every 6 hours</div>
+                        <div class="arrow">↓</div>
+                        <div>2. Shopify: Get all products + stock levels</div>
+                        <div class="arrow">↓</div>
+                        <div>3. IF stock < 10 units → Send alert</div>
+                        <div class="arrow">↓</div>
+                        <div>4. Slack/Email: "Low stock warning!"</div>
+                        <div class="arrow">↓</div>
+                        <div>5. IF stock = 0 → Pause ads + add "sold out" badge</div>
+                    </div>
+
+                    <h4>Smart Alerts:</h4>
+                    <ul>
+                        <li>< 10 units: Yellow alert (reorder soon)</li>
+                        <li>< 5 units: Red alert (reorder NOW)</li>
+                        <li>= 0 units: Critical (pause ads, add waitlist)</li>
+                    </ul>
+
+                    <h4>Bonus: Back-in-Stock Notifications</h4>
+                    <ul>
+                        <li>When product restocked → Email everyone on waitlist</li>
+                        <li>"It's back! [Product Name] is available again 🎉"</li>
+                        <li>Creates urgency: "Limited quantity"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- WORKFLOW 7 -->
+            <h2>🔄 Workflow #7: Customer Winback Campaign</h2>
+
+            <div class="workflow-step">
+                <div class="step-number">7</div>
+                <div class="step-content">
+                    <h3>The Opportunity</h3>
+                    <p>20-40% of your revenue should come from repeat customers. But most small brands focus only on new customers.</p>
+
+                    <h3>The Winback Sequence</h3>
+                    <div class="node-diagram">
+                        <div>1. Schedule: Daily check for inactive customers</div>
+                        <div class="arrow">↓</div>
+                        <div>2. Identify: Last purchase > 90 days ago</div>
+                        <div class="arrow">↓</div>
+                        <div>3. Segment by product category purchased</div>
+                        <div class="arrow">↓</div>
+                        <div>4. Email: Personalized "We miss you" + 20% off</div>
+                        <div class="arrow">↓</div>
+                        <div>5. No response → SMS in 7 days</div>
+                        <div class="arrow">↓</div>
+                        <div>6. No response → Final email with 30% off</div>
+                    </div>
+
+                    <h4>Email #1 (Day 90):</h4>
+                    <div class="code-block">Subject: We miss you! Here's 20% off 💔
+
+Hi {{first_name}},
+
+It's been a while since you last ordered from us!
+
+We hope you loved your [last product purchased]. 
+
+Want to restock? Here's 20% off your next order:
+Code: WELCOME20
+
+[New arrivals that match their previous purchase]
+
+See you soon!
+[Your Brand]</div>
+
+                    <h4>Success Metrics:</h4>
+                    <ul>
+                        <li>Typical winback rate: 5-15%</li>
+                        <li>If you have 1,000 inactive customers</li>
+                        <li>Win back 100 customers at $50 average = $5,000 recovered revenue</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- WORKFLOW 8 -->
+            <h2>📱 Workflow #8: Social Media Content Generator</h2>
+
+            <div class="workflow-step">
+                <div class="step-number">8</div>
+                <div class="step-content">
+                    <h3>The Challenge</h3>
+                    <p>You need to post 3-5x per day across Instagram, TikTok, Pinterest, Facebook. That's 20+ posts per week. You're drowning.</p>
+
+                    <h3>The Solution</h3>
+                    <p>Create a "Content Ideas Bank" in Notion (30 ideas). n8n pulls one daily, AI creates platform-specific versions, schedules automatically.</p>
+
+                    <h4>Content Types That Work for E-commerce:</h4>
+                    <ul>
+                        <li><strong>Product Features:</strong> "5 ways to use [product]"</li>
+                        <li><strong>Behind-the-Scenes:</strong> "How we make [product]"</li>
+                        <li><strong>Customer Stories:</strong> "Customer used this to [result]"</li>
+                        <li><strong>Comparisons:</strong> "Our [product] vs. competitors"</li>
+                        <li><strong>Educational:</strong> "Common mistakes when buying [product]"</li>
+                        <li><strong>Seasonal:</strong> "Perfect for [upcoming holiday/season]"</li>
+                        <li><strong>User Tips:</strong> "Pro tip: Get more from your [product]"</li>
+                    </ul>
+
+                    <h4>The AI Prompt:</h4>
+                    <div class="code-block">Create social media content for e-commerce brand:
+
+Content Idea: {{$json.content_idea}}
+Product: {{$json.product_name}}
+Brand Voice: {{$json.brand_voice}} (e.g., "Playful and eco-conscious")
+
+Generate:
+
+1. Instagram Caption (100 words + emojis + 7 hashtags)
+2. TikTok Script (15 seconds, hook in first 3 sec)
+3. Pinterest Description (SEO-optimized, 100 words)
+4. Facebook Post (Conversational, question at end)
+
+For each platform, optimize for:
+- Instagram: Visual storytelling
+- TikTok: Entertainment + education
+- Pinterest: Searchability + aspiration
+- Facebook: Community engagement</div>
+
+                    <div class="success">
+                        <div class="icon">✅ Result:</div>
+                        <p style="margin-top: 0.4rem; margin-bottom: 0;">Batch-create 30 content ideas in 2 hours. AI generates platform-specific versions daily. You maintain consistent presence with 2 hours/month of work (vs. 20+ hours).</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>🎯 30-Day E-commerce Automation Roadmap</h2>
+
+            <div class="card">
+                <h3>Week 1: Revenue Protection</h3>
+                <ul>
+                    <li>Day 1-3: Build Abandoned Cart Recovery (Workflow #2)</li>
+                    <li>Day 4-5: Build Low Inventory Alerts (Workflow #6)</li>
+                    <li>Day 6-7: Test both workflows with real data</li>
+                    <li><strong>Expected Revenue Impact:</strong> +15-20% in week 2</li>
+                </ul>
+
+                <h3>Week 2: Social Proof & Reviews</h3>
+                <ul>
+                    <li>Day 8-10: Build Review Collection (Workflow #3)</li>
+                    <li>Day 11-12: Build UGC Collector (Workflow #5)</li>
+                    <li>Day 13-14: Launch both, monitor results</li>
+                    <li><strong>Expected Impact:</strong> 50+ reviews in 60 days</li>
+                </ul>
+
+                <h3>Week 3: Content & Launch Systems</h3>
+                <ul>
+                    <li>Day 15-17: Build Product Description Generator (Workflow #1)</li>
+                    <li>Day 18-19: Build Product Launch Blitz (Workflow #4)</li>
+                    <li>Day 20-21: Build Social Media Automation (Workflow #8)</li>
+                </ul>
+
+                <h3>Week 4: Customer Retention</h3>
+                <ul>
+                    <li>Day 22-24: Build Customer Winback (Workflow #7)</li>
+                    <li>Day 25-26: Optimize all workflows based on data</li>
+                    <li>Day 27-28: Calculate ROI, plan next automations</li>
+                    <li>Day 29-30: Document your system for future team members</li>
+                </ul>
+            </div>
+
+            <h2>💰 E-commerce Metrics to Track</h2>
+
+            <div class="info">
+                <div class="icon">📊 Create a Dashboard in Google Sheets:</div>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li><strong>Cart Recovery Rate:</strong> Target 20%+</li>
+                    <li><strong>Review Collection Rate:</strong> Target 30%+</li>
+                    <li><strong>UGC Posts per Month:</strong> Target 15-20</li>
+                    <li><strong>Repeat Customer Rate:</strong> Target 25%+</li>
+                    <li><strong>Email Open Rates:</strong> Target 25-35%</li>
+                    <li><strong>Time Saved per Week:</strong> Log and celebrate!</li>
+                    <li><strong>Revenue from Automation:</strong> Track separately</li>
+                </ul>
+            </div>
+
+            <h2>🚀 Success Stories: E-commerce Brands Using n8n</h2>
+
+            <div class="success">
+                <h3>Jade - Handmade Jewelry ($15K/month → $45K/month)</h3>
+                <p><em>"Abandoned cart recovery alone brought back $8,000 in the first month. Review automation got me from 12 reviews to 200+ reviews in 4 months. Conversion rate tripled."</em></p>
+            </div>
+
+            <div class="success">
+                <h3>Marcus - Eco-friendly Home Goods</h3>
+                <p><em>"Product description AI saves me 8 hours per week. I launch 2 new products weekly now instead of 1 per month. Revenue up 180% in 6 months."</em></p>
+            </div>
+
+            <div class="success">
+                <h3>Sophie - Beauty Brand</h3>
+                <p><em>"The UGC collector brought in 60+ customer photos in 2 months. Our Instagram engagement went from 2% to 8%. Influencers now reach out to US."</em></p>
+            </div>
+
+            <h2>⚠️ Common E-commerce Mistakes to Avoid</h2>
+
+            <div class="card">
+                <h3>❌ Don't Do This:</h3>
+                <ul>
+                    <li><strong>Sending too many emails:</strong> Max 2 abandoned cart emails. More = spam</li>
+                    <li><strong>Asking for reviews too early:</strong> Wait 5-7 days minimum</li>
+                    <li><strong>Over-discounting:</strong> Don't train customers to wait for sales</li>
+                    <li><strong>Ignoring mobile:</strong> 70% of e-commerce is mobile. Test everything on phone</li>
+                    <li><strong>No segmentation:</strong> New customers ≠ Repeat customers. Different messages</li>
+                </ul>
+
+                <h3>✅ Do This Instead:</h3>
+                <ul>
+                    <li><strong>Personalize everything:</strong> Use {{first_name}}, {{last_product}}, {{total_orders}}</li>
+                    <li><strong>Test subject lines:</strong> A/B test everything. 1 word can double open rates</li>
+                    <li><strong>Time zones matter:</strong> Send emails when they're awake</li>
+                    <li><strong>Mobile-first design:</strong> Short paragraphs, big buttons, fast loading</li>
+                    <li><strong>Track EVERYTHING:</strong> You can't improve what you don't measure</li>
+                </ul>
+            </div>
+
+            <h2>🎓 Advanced E-commerce Automations</h2>
+
+            <div class="tip">
+                <div class="icon">🚀 Once You Master the Basics:</div>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li><strong>Dynamic Pricing:</strong> Auto-adjust prices based on competitor pricing</li>
+                    <li><strong>Predictive Inventory:</strong> AI predicts stockouts 2 weeks in advance</li>
+                    <li><strong>Smart Recommendations:</strong> "Customers who bought X also loved Y"</li>
+                    <li><strong>Seasonal Campaigns:</strong> Auto-create holiday marketing 30 days before</li>
+                    <li><strong>Influencer CRM:</strong> Track all influencer outreach and ROI automatically</li>
+                </ul>
+            </div>
+
+            <h2>✅ Your Action Plan</h2>
+
+            <div class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border-left: none;">
+                <h3 style="color: white;">Ready to Scale Your E-commerce Brand?</h3>
+                <ol style="color: white;">
+                    <li>Start with Abandoned Cart Recovery (biggest immediate ROI)</li>
+                    <li>Add Review Collection in week 2</li>
+                    <li>Layer in Product Description AI by week 3</li>
+                    <li>Build remaining workflows by end of month</li>
+                    <li>Track results, optimize, repeat</li>
+                </ol>
+                <p style="margin-top: 1rem; color: white; font-weight: bold;">Most e-commerce brands see 20-40% revenue increase in first 90 days. Yours could be next.</p>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+                <p style="font-size: 0.85rem; color: #6c757d;">🛍️ Built for Shopify, WooCommerce, and all e-commerce platforms</p>
+                <p style="font-size: 0.75rem; color: #adb5bd; margin-top: 0.5rem;">E-commerce Automation Guide | 2026 Edition</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
